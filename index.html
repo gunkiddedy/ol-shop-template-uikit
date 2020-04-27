@@ -29,9 +29,37 @@
         <div class="uk-section uk-section-xsmall uk-section-default">
             <ul class="uk-flex-right" uk-tab>
                 <li class="uk-active"><a href="#"> <span uk-icon="icon: heart;"></span> </a></li>
-                <li><a href="#"><span uk-icon="icon: cart;"></span></a></li>
-                <li><a href="#"><span uk-icon="icon: bell;"></span></a></li>
-                <li><a href="#"><span uk-icon="icon: user;"></span></a></li>
+                <li>
+                    <a href="#"><span class="uk-margin-small-left" uk-icon="icon: cart"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="uk-margin-small-left" uk-icon="icon: bell"></span></a>
+                    <div uk-dropdown="mode: click">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="uk-margin-small-left" uk-icon="icon: user"></span></a>
+                    <div uk-dropdown="mode: click">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -212,41 +240,6 @@
         </div>
     </div>
 
-
-    <!-- CARD INFO -->
-    <div class="uk-container uk-container-large uk-margin">
-        <div class="uk-section uk-section-muted">
-            <div class="uk-container">
-                <h3>New Products</h3>
-                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Default</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Primary</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Secondary</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Default</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 
      <!-- SECTION PRODUK -->
@@ -380,6 +373,66 @@
             </div>
         </div>        
     </div>
+
+    <!-- CARD INFO -->
+    <div class="uk-container uk-container-large uk-margin">
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <h3>Browse Help Articles</h3>
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Returns & Refunds</h3>
+                            <a href="#">
+                                <span class="uk-align-center" uk-icon="icon: refresh; ratio: 2"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Shipping & Tracking</h3>
+                            <a href="#">
+                                <span class="uk-align-center" uk-icon="icon: camera; ratio: 2"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Account</h3>
+                            <a href="#">
+                                <span class="uk-align-center" uk-icon="icon: user; ratio: 2"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Buying</h3>
+                            <a href="#">
+                                <span class="uk-align-center" uk-icon="icon: cart; ratio: 2"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Selling</h3>
+                            <a href="#">
+                                <span class="uk-align-center" uk-icon="icon: tag; ratio: 2"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Fees</h3>
+                            <a href="#">
+                                <span class="uk-align-center" uk-icon="icon: rss; ratio: 2"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
     <!-- FOOTER -->
     <hr>
