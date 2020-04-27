@@ -17,6 +17,9 @@
             background-color: #fff;
             border-bottom: 1px solid #e5e5e5;
         }
+        .logonya{
+           max-width: 50px;
+        }
     </style>
 
 </head>
@@ -27,7 +30,7 @@
 
         <!-- small navbar -->
         <div class="uk-section uk-section-xsmall uk-section-default">
-            <ul class="uk-flex-right" uk-tab>
+            <ul class="uk-flex-center" uk-tab>
                 <li class="uk-active"><a href="#"> <span uk-icon="icon: heart;"></span> </a></li>
                 <li>
                     <a href="#"><span class="uk-margin-small-left" uk-icon="icon: cart"></span></a>
@@ -68,7 +71,9 @@
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" >
             <nav class="bg-black" uk-navbar style="position: relative; z-index: 980;">
                 <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+                    <a class="uk-navbar-item uk-logo" href="">
+                        <img src="img/logo.png" alt="" class="logonya">
+                    </a>
                     <!-- <ul class="uk-navbar-nav">
                         <li>
                             <a href="#">
@@ -77,7 +82,7 @@
                             </a>
                         </li>
                     </ul> -->
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav uk-visible@m">
                         <li>
                             <a href="#">Item</a>
                             <div class="uk-navbar-dropdown">
@@ -165,8 +170,7 @@
                     <!-- <div class="uk-navbar-item">
                         <div>Some <a href="#">Link</a></div>
                     </div> -->
-                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Default Nav</button>
-                    <div class="uk-navbar-item">
+                    <div class="uk-navbar-item uk-visible@m">
                         <form action="">
                             <input class="uk-input uk-form-width-large" type="text" placeholder="Search here">
                             <select name="" id="" class="uk-select uk-form-width-small">
@@ -177,6 +181,11 @@
                             <button class="uk-button uk-button-primary" type="submit">Search</button>
                         </form>
                     </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <a  uk-toggle="target: #offcanvas-nav" href="#" >
+                        <span uk-icon="icon: menu; ratio:2" class="uk-hidden@m"></span>
+                    </a>
                 </div>
             </nav>
         </div>
